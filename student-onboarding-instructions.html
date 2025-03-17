@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Onboarding</title>
-    <base href="/moodlegamificado/">
     
     <!-- CSS -->
-    <link type="text/css" href="public/css/app.css" rel="stylesheet">
-    <link type="text/css" href="public/css/material-icons.css" rel="stylesheet">
-    <link type="text/css" href="public/css/home-style-2.css" rel="stylesheet">
+    <link type="text/css" href="./public/vendor/perfect-scrollbar.css" rel="stylesheet">
+    <link type="text/css" href="./public/css/material-icons.css" rel="stylesheet">
+    <link type="text/css" href="./public/css/fontawesome.css" rel="stylesheet">
+    <link type="text/css" href="./public/css/app.css" rel="stylesheet">
+    <link type="text/css" href="./public/css/home-style-2.css" rel="stylesheet">
 </head>
 
 <style>
@@ -69,8 +70,8 @@
         <div class="mdk-header-layout js-mdk-header-layout">
             <!-- Navbar -->
             <div class="navbar navbar-expand navbar-dark navbar-static-top">
-                <a href="html/html/home.html" class="navbar-brand">
-                    <img src="public/images/logo/Asset 15@2x.png" alt="logo" class="img-fluid" style="max-height: 48px;">
+                <a href="./docs/html/html/home.html" class="navbar-brand">
+                    <img src="./public/images/logo/Asset 15@2x.png" alt="logo" class="img-fluid" style="max-height: 48px;">
                 </a>
             </div>
 
@@ -102,9 +103,9 @@
          
 
     <!-- Scripts -->
-    <script src="public/vendor/jquery.min.js"></script>
-    <script src="public/vendor/bootstrap.min.js"></script>
-    <script src="public/js/app.js"></script>
+    <script src="./public/vendor/jquery.min.js"></script>
+    <script src="./public/vendor/popper.min.js"></script>
+    <script src="./public/js/app.js"></script>
     <script>
     function handleContinue() {
         const button = document.getElementById('continueBtn');
@@ -118,9 +119,9 @@
         spinner.classList.remove('d-none');
         btnText.textContent = 'Preparando...';
         
-        // Redireciona após 3 segundos
+        // Atualizar o caminho do redirecionamento
         setTimeout(() => {
-            window.location.href = 'html/html/home.html';
+            window.location.href = './docs/html/html/home.html';
         }, 3000);
     }
     </script>
